@@ -1,0 +1,212 @@
+
+body {
+    margin: 50px; /* Margin on all 4 sides */
+    background-color: #ffe6e6; /* Light pink color */
+    font-family: Arial, sans-serif; /* Font for the diary */
+    line-height: 1.6; /* Line spacing */
+    padding: 20px; /* Padding inside the page */
+  }
+  .diary-page {
+    background-color: #f6baba; /* White color for the diary page */
+    padding: 40px 20px 20px 20px; /* Padding inside the diary page */
+    border-radius: 10px; /* Rounded corners for the diary page */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Drop shadow for the diary page */
+    position: relative; /* Position relative for absolute positioning */
+    /* opacity: 0.5; */
+  }
+  .top-diary-page {
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    height: 50px; /* Height of the top edge */
+    /* background-color: white; */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top */
+    z-index: 1; /* Ensure the top part is above the diary content */
+    overflow: hidden; /* Hide overflow */
+    padding: 0px 0px 0px 20px;
+    /* width: 100px;
+    height: 100px; */
+    background-color: #ffe6e6;
+  }
+  .circle {
+    width: 30px; /* Width of each semi-circle */
+    height: 30px; /* Height of each semi-circle */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 0px 10px 0px; /* Adjust as needed */
+    background-color: #ffffff;
+    box-shadow: -4px -4px 0 3px rgb(33, 6, 6);
+  }
+  .inside-top{
+    height: 50px; /* Height of the top edge */
+    border-radius: 5px 0 0 0; /* Rounded corners for the top */
+    z-index: 1; /* Ensure the top part is above the diary content */
+    overflow: hidden; /* Hide overflow */
+    margin: -15px 0 0 0;
+    background-color: #f6baba;
+  }
+  .pacifico-regular {
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+.caveat-polaroid {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+  .blank-space-circle{
+    width: 20px; /* Width of each semi-circle */
+    height: 25px; /* Height of each semi-circle */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 0px;
+  }
+  .blank-space-inverted-circle{
+    width: 40px; /* Width of each semi-circle */
+    height: 25px; /* Height of each semi-circle */
+    border-radius: 50%;
+    padding: 0px 4px;
+    display: inline-block;
+    margin: 0px 0px; 
+  }
+  .blank-space-circle-special{
+    width: 7px; /* Width of each semi-circle */
+    height: 25px; /* Height of each semi-circle */
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 0px;
+  }
+  .inverted-circle {
+    width: 48px; /* Width of each inverted semi-circle */
+    height: 25px; /* Height of each inverted semi-circle */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom: none;
+    border: 5px solid black; /* Border color same as background */
+    border-bottom: none;
+    display: inline-block;
+    margin: 20px 0px; /* Adjust as needed */
+  }
+  .the-story{
+    padding: 0px 20px;
+  }
+  .header{
+    padding: 10px 0px;
+    text-align: center;
+    color: #992c2c;
+    text-size-adjust: 50px;
+    font-size: 50px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);;
+    
+  }
+  .horizontal-line {
+    border-top: 1.5px solid black; /* Horizontal line style */
+    /* margin-top: 4px; 
+    margin-bottom: 13px;  */
+    padding-top: 1px;
+    padding-bottom: 15px;
+  }
+  .container {
+    /* position: relative;
+    width: 200px;
+    height: 200px; */
+  }
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    position: absolute;
+  }
+  .shadow {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Adjust the shadow properties as needed */
+  }
+  p{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 25px;
+    /* font-weight: 300; */
+  }
+  .pic-1{
+    /* position: absolute; */
+    /* z-index: 1; */
+    /* height: fit-content;
+    width: fit-content; */
+    float: right;
+    transform: rotate(5deg);
+    z-index: 1;
+    /* margin: 30px 20px 0px 0px; */
+    /* border: 3px 3px 7px 3px solid white; */
+    /* padding: 3px 3px 3px 3px solid white; */
+    /* border: 3px solid white; */
+  }
+  figure{
+    width: 240px;
+    height: 360px;
+    position: relative;
+    background-color: #eaeaea;
+    padding: 10px 10px 40px 10px;
+  }
+  figure img{
+    width: 100%;
+  }
+  figcaption{
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 12px;
+  }
+  figure:before,
+  figure:after{
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 130px;
+    background-color: rgba(102, 102, 102, 0.6);
+    transform: rotate(-40deg);
+  }
+  figure:before{
+    top:3px;
+    left:-55px;
+  }
+  figure:after{
+    bottom: -5px;
+    right: -50px;
+  }
+  .surprise-button{
+    /* text-align: center; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Segoe UI", sans-serif;
+
+  }
+  .btn{
+    color:  #eaeaea;
+    border: none;
+    margin: 100px 0px 25px 0px;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+
+  .btn-surprise{
+    background-color: #992c2c;
+    box-shadow: 0 0 25px #992c2c;
+  }
+
+  .btn-surprise:hover{
+    box-shadow: 0 0 5px #992c2c,
+                0 0 25px #992c2c,
+                0 0 50px #992c2c,
+                0 0 100px #992c2c;
+  }
+  

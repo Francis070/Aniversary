@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Proposal</title>
+    <link rel="stylesheet" href="propose_style.css">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="header pacifico-regular">The Proposal !!!</h1>
+        </div>
+        <div class="video-container">
+            <div id="time">0.00 / 0.00</div>
+            <!-- ------------video------------------ -->
+            <video id="video">
+                <source src="resources\videoPlayerResources\main_video.mp4" type="video/mp4">
+            </video>
+            <!-- --------------------------end of video------------------ -->
+
+            <!-- ----------play button----------- -->
+            <button type="button" id="button" onclick="play()">
+                <img src="resources\videoPlayerResources\play2.png" id="icon">
+                
+            </button>
+            <!-- -------------end of play button---------------- -->
+
+
+            <!-- ----------------pause button ------------------------ -->
+
+            <!-- ------------------------end of pause button ---------------------- -->
+        </div>
+
+        <div class="wrapper">
+            <h2 class="question pacifico-regular">So Itilipsha, will you be my girlfriend(again) ?</h2>
+            <div class="btn-group">
+                <button class="btn yes-btn pacifico-regular">YES</button>
+                <button class="btn no-btn pacifico-regular">no</button>
+    
+            </div>
+        </div>
+
+    </div>
+    <!-- <div class="wrapper">
+        <h2>So Itilipsha, will you be my girlfriend(again) ?</h2>
+        <div class="btn-group">
+            <button class="yes-btn">YES</button>
+            <button class="no-btn">no</button>
+
+        </div>
+    </div> -->
+    
+    <script type="text/javascript" src="propose_script.js"></script>
+</body>
+</html>
